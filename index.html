@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -12,31 +13,66 @@
     <title>uTask 3.0</title>
 </head>
 <header>
-    <div class="container">
-        <div class="row header">
-            <div class="col-3">AAAAAAA</div>
-            <div class="col-3">uTask 3.0</div>
-            <div class="col-3"><button>muda</button></div>
-        </div>
+    <div class="header">
+        <img src ="img/logoBranca.png"></img>
+        <span class="title">uTask 3.0</span>
+        <button class="no-backgroundheader"><img src="/img/botaoLightMode.png" alt=""></button>
     </div>
 </header>
 <body>
-    <div class="container">
-        <div class="body">
-            <div class="col-3"><p>teste fonte não aparece</p></div>
+    <section class="section-padding">
+        <div class="box-phrase">
+            <img src ="img/logoFrase.png" class="phrase-img"></img>
+            <div class="phrase-content">
+                <span class="phrase-title">Frase do dia</span>
+                <p class="phrase-description">Se você quer um pedacinho do paraíso, acredite em Deus. Mas se você quer conquistar o mundo, acredite em você porque Deus já te deu tudo o que você precisa para você vencer.</p>
+            </div>
         </div>
-    </div>
+        <div class="content">
+            <div class="content-progress">
+                <div class="content-header">
+                    <span class="content-title">A Fazer</span> 
+                    <button class="no-backgroundwhite"><img src="/img/botaoAddTask.png" alt=""></button>
+                </div>
+                <div class="content-list">
+                    <div class="content-item">
+                        <div class="item-header">
+                            <span class="item-title">Em andamento</span>
+                            <select class="selectpicker">
+                                <option><img src="/img/botaoMaisVertical.png">Excluir</option>
+                            </select>
+                        </div>
+                        <span class="description-text">Ler descrição<button class="no-backgroundwhite"><img src="/img/botaoExpandir.png" alt=""></button></span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-progress">
+                <div class="content-header">
+                    <span class="content-title">Em andamento</span> 
+                </div>
+                <div class="content-list">
+                    
+                </div>
+            </div>
+            <div class="content-progress">
+                <div class="content-header">
+                    <span class="content-title">Feito</span> 
+                </div>
+                <div class="content-list">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <footer>
-    <div class="container">
-        <div class="row footer">
-            <div class="col-3">
-                © Processo de Trainee <bold>Unect Jr. </bold>2022.1
+        <div class="footer">
+            <div class="footer-text1">
+                © Processo de Trainee  <a href="https://unect.com.br" class="text-bold">Unect Jr.</a> 2023.1
             </div>
-            <div class="col-3" text-align="right">
-                Feito com ♥ por Leonardo Jorge  
+            <div>
+               <span class="footer-text2">Feito com <span class="material-symbols-outlined heart-style"> favorite </span>por Leonardo Jorge</span>
             </div>
-        </div>
-    </div> 
+        </div> 
 </footer>
 </html>
