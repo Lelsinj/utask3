@@ -233,3 +233,8 @@ color: #141414;
 .no-backgroundwhite {
   background-color: #FFFFFF;
 }
+
+.space-heart{
+  margin-left: 5px;
+  margin-right: 5px;
+}
