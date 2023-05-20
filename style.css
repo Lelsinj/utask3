@@ -30,10 +30,6 @@ button {
   border: none;
 }
 
-.li-style{
-    list-style-type: none;
-}
-
 .header {
   height: 80px;
   background: #226ED8;
@@ -256,6 +252,9 @@ div.content-item:first-of-type{
 .more-vertical{
   width: 0.438rem;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .overlay {
@@ -347,6 +346,7 @@ div.content-item:first-of-type{
   height: 5.625rem;
   margin-left: 3.125rem;
   border: none;
+  resize: none;
 }
 
 .overlay-createTask{
@@ -400,4 +400,60 @@ div.content-item:first-of-type{
 
 #overlay-firstrow{
   padding-bottom: 1.875rem;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #FFFFFF;
+  width: 4.4375rem;
+  height: 1.9375rem;
+  box-shadow: 0rem 0rem 0.25rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:none;}
+
+.dropdown-imgremove{
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #DF0000;
+}
+
+.dropdown-spantext{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  /* identical to box height */
+  display: absolute;
+  align-items: center;
+  color: #DF0000;
+  margin-left: 0.1875rem;
 }
