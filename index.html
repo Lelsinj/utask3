@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <script src="script/script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,23 +21,21 @@
 </header>
 <body>
     <div class="overlay">
-        <div>
+        <div class="overlay-flex">
             <span class="overlay-header">Nova Task</span>
-            <h1 class="overlay-blueLine"> </h1> 
+            <button class="no-backgroundwhite-borderradius"><img id="task-overlay" src="img/overlayFechar.png" alt="" class="overlay-closeButton"></button> 
         </div>   
+
         <div>
-            <!--<img class="overlay-closeButton" src="img/overlayFechar.png" alt="">-->
-        </div>
-        <div>
-            <form action="">
+            <form id="addTask">
                 <label for="taskName" class="overlay-taskName">Título *</label><br>
                 <input type="text" name="taskName" id="taskName" class="overlay-taskNameForms"><br>
                 <label for="taskDescription" class="overlay-taskDescription">Descrição</label><br>
-                <input type="text" name="taskDescription" id="taskDescription" class="overlay-taskDescriptionForms">
+                <textarea cols="30" rows="10"name="taskDescription" id="taskDescription" class="overlay-taskDescriptionForms"></textarea>
             </form>
         </div>
         <div>
-            <button class="overlay-createTask">Criar task</button>
+            <button type="submit" name="submit" value="submit" class="overlay-createTask">Criar task</button>
         </div>
     </div>
     <section class="section-padding">
@@ -53,16 +50,16 @@
             <div class="content-progress">
                 <div class="content-header">
                     <span class="content-title">A Fazer</span> 
-                    <button class="no-backgroundwhite"><img src="/img/botaoAddTask.png" alt=""></button>
+                    <button id="task" class="no-backgroundwhite"><img src="/img/botaoAddTask.png" alt=""></button>
                 </div>
                 <div class="content-list">
-                    <div class="content-item">
-                        <div class="item-header">
-                            <span class="item-title">Em andamento</span>
-                            <img class="more-vertical" src="/img/botaoMaisVertical.png" >
+                        <div class="content-item">
+                            <div class="item-header">
+                                <span class="item-title">Em andamento</span>
+                                <button class="more-vertical"><img src="/img/botaoMaisVertical.png"></button>
+                            </div>
+                            <span class="description-text">Ler descrição<button class="no-backgroundwhite"><img src="/img/botaoExpandir.png" alt=""></button></span>
                         </div>
-                        <span class="description-text">Ler descrição<button class="no-backgroundwhite"><img src="/img/botaoExpandir.png" alt=""></button></span>
-                    </div>
                 </div>
             </div>
             <div class="content-progress">
@@ -83,6 +80,7 @@
             </div>
         </div>
     </section>
+    <script src="script/script.js"></script>
 </body>
 <footer>
         <div class="footer">
