@@ -423,7 +423,7 @@ div.content-item:first-of-type{
 
 /* Links inside the dropdown */
 .dropdown-content{
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -433,7 +433,7 @@ div.content-item:first-of-type{
 .dropdown-content a:hover {background-color: #ddd;}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:none;}
+.show {display:flex;}
 
 .dropdown-imgremove{
   font-family: 'Material Icons';
